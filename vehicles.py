@@ -6,6 +6,12 @@ class Vehicle:
     def drive(self):
         print("Vroooom!")
 
+    def turn(self, direction):
+      return f"Turn {direction}"
+
+    def stop(self):
+      print("please stop")
+
 class Cessna(Vehicle):
     def __init__(self):
         self.fuel_capacity = 0
@@ -18,7 +24,7 @@ class Cessna(Vehicle):
 class Tesla(Vehicle):
     def __init__(self):
         self.battery_kwh = 0
-
+    # super().__init__("left")
     def drive(self):
         print("Zoooooooooooom!")
 
@@ -62,3 +68,5 @@ htheh.number_of_doors()
 hello.drive()
 htheh.drive()
 mdtie.drive()
+
+modelS.direction()
