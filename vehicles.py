@@ -1,24 +1,64 @@
 class Vehicle:
+    def __init__(self):
+        self.main_color = ""
+        self.maximum_occupancy = ""
 
-   def __init__(self, color, brand, maximum_occupancy, year):
-    self.color = color
-    self.brand = brand
-    self.maximum_occupancy = maximum_occupancy
-    self.year = year
-    self.doors = doors
+    def drive(self):
+        print("Vroooom!")
+
+class Cessna(Vehicle):
+    def __init__(self):
+        self.fuel_capacity = 0
+
+    def refuel_tank(self):
+      print('hi')
+    def drive(self):
+      print("Mary West!")
 
 class Tesla(Vehicle):
+    def __init__(self):
+        self.battery_kwh = 0
 
-    def __init__(self, range):
-      self.mile_range = mile_range
-    super().__init__("black", 24)
+    def drive(self):
+        print("Zoooooooooooom!")
 
-tesla_car = Tesla("Betty")
-print(tesla_car)
+class Ram(Vehicle):
+    def __init__(self):
+        self.fuel_capacity = 0
+    def drive(self):
+      print("Robert Rice!")
+
+    def refuel_tank(self):
+      print('HELLLOOOO!')
 
 class BMW(Vehicle):
-    def __init__(self, leather):
-      self.leather_color = leather_color
-    super().__init__("black", "tan")
+    def __init__(self):
+        self.leather = 0
+    def drive(self):
+      print("Roxanne West!")
 
-print(tesla_car.color)
+    def leather_true(self):
+      print('LEATHER!!')
+
+class Lexus(Vehicle):
+    def __init__(self):
+        self.doors = 0
+    def drive(self):
+      print("Daniel West!")
+
+    def number_of_doors(self):
+      print('you have 4 doors!!')
+
+modelS = Tesla()
+mx410 = Cessna()
+mdtie = BMW()
+htheh = Lexus()
+hello = Ram()
+
+modelS.drive()
+mx410.drive()
+mdtie.leather_true()
+htheh.number_of_doors()
+hello.drive()
+htheh.drive()
+mdtie.drive()
